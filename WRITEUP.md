@@ -52,7 +52,25 @@ a successful model.]
 
 In investigating potential people counter models, I tried each of the following three models:
 
-- Model 1: person-detection-retail-0013
+- Model 1: R-CNN
+  - [PyTorch Mash R-CNN](https://pytorch.org/tutorials/intermediate/torchvision_tutorial.html)
+  - I converted the model to an Intermediate Representation with the following argument structure: `python3 mo.py --input_model INPUT_MODEL`
+  - The model was insufficient for the app because the accuracy was too low after conversion and the size of the model too big for implementation at the edge
+  - I tried to improve the model for the app by using quantization for the precision
+  
+- Model 2: SSD
+  - [SSD by NVDIA](https://pytorch.org/hub/nvidia_deeplearningexamples_ssd/)
+  - I converted the model to an Intermediate Representation with the following argument structure: `python3 mo.py --input_model INPUT_MODEL`
+  - The model was insufficient for the app because the accuracy was too low after conversion and the size of the model too big for implementation at the edge
+  - I tried to improve the model for the app by using quantization for the precision
+
+- Model 3: YOLO
+  - [YOLO with darknet](https://pjreddie.com/darknet/yolo/)
+  - I converted the model to an Intermediate Representation with the following argument structure: `python3 mo.py --input_model INPUT_MODEL`
+  - The model was insufficient for the app because the accuracy was too low after conversion and the size of the model too big for implementation at the edge
+  - I tried to improve the model for the app by using quantization for the precision
+
+- DNN Model that worked: person-detection-retail-0013
   - [/opt/intel/openvino/deployment_tools/intel_models/person-detection-retail-0013](https://docs.openvinotoolkit.org/latest/_models_intel_person_detection_retail_0013_description_person_detection_retail_0013.html)
   - I converted the model to an Intermediate Representation with the following argument structure: `python3 mo.py --input_model INPUT_MODEL`
   - The model sufficient for the app it was able to track most people passing through the frame, though overcounting due to the same people returning to the frame could be an issue and needs extra work to address. 
