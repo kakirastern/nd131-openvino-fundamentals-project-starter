@@ -38,7 +38,11 @@ Each of these use cases would be useful because it can free up human resources a
 ## Assess Effects on End User Needs
 
 Lighting, model accuracy, and camera focal length/image size have different effects on a
-deployed edge model. The potential effects of each of these are as follows...
+deployed edge model. The potential effects of each of these are as follows:
+
+1. Lighting: The darker the space the lower the accuracy. 
+2. Model accuracy: Should be accurate enough for production use even after model conversion.
+3. Image size: Should allow a large proportion of the people to be captured through the frame. 
 
 ## Model Research
 
