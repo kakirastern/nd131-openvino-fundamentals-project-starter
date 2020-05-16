@@ -38,7 +38,7 @@ deployed edge model. The potential effects of each of these are as follows:
 
 1. Lighting: The darker the space the lower the accuracy. 
 2. Model accuracy: Should be accurate enough for production use even after model conversion.
-3. Image size: Should allow a large proportion of the people to be captured through the frame. 
+3. Image size: Should be configured to allow a large proportion of an individual to be captured through the frame. 
 
 ## Model Research
 
