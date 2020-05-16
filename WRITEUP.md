@@ -17,7 +17,7 @@ Some of the potential reasons for handling custom layers are when some special t
 ## Comparing Model Performance
 
 My method(s) to compare models before and after conversion to Intermediate Representations
-were to use some performance counts measure to gauge performance with the stats of the output of the converted model. 
+were to use some performance measure to gauge performance with the stats of the output of the converted model. 
 
 The difference between model accuracy pre- and post-conversion was more or less the same after the conversion, even though the performance pre-conversion was a lot more accurate. 
 
