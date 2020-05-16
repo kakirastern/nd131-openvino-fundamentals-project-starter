@@ -1,9 +1,5 @@
 # Project Write-Up
 
-You can use this document as a template for providing your project write-up. However, if you
-have a different format you prefer, feel free to use it as long as you answer all required
-questions.
-
 Notes: The template has been faithfully followed for the project write up. 
 
 ## Explaining Custom Layers
@@ -45,10 +41,6 @@ deployed edge model. The potential effects of each of these are as follows:
 3. Image size: Should allow a large proportion of the people to be captured through the frame. 
 
 ## Model Research
-
-[This heading is only required if a suitable model was not found after trying out at least three
-different models. However, you may also use this heading to detail how you converted 
-a successful model.]
 
 In investigating potential people counter models, I tried each of the following three models:
 
